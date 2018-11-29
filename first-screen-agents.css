@@ -1,0 +1,179 @@
+
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  
+}
+
+.button_call{
+  border: grey 1px solid;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background: #fbf2f0;
+}
+
+.button_call:hover {
+  border: grey 1px solid;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background: white;
+}
+
+nav {
+  width: 500px;
+  
+}
+
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-logo {
+  display: inline-block;
+  
+
+}
+
+.line {
+  border-right: 1px solid #595757;  
+  margin-right: 5px; 
+  padding-right: 50px;
+  height: 10px;
+  vertical-align: middle;
+}
+
+.navbar-logo {
+  display: inline-block;
+
+}
+
+.logo {
+  width: 30%;
+}
+
+
+.menu {
+  padding: 20px;
+  display: inline-block;
+
+}
+
+
+.topmenu {
+  width: 600px;
+}
+
+.topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.main_link:hover {
+  font-size: 20px;
+}
+
+
+
+a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  outline: none;
+  transition: .5s linear;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: -40%;
+  width: 150%;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+}
+
+.main_link {
+  color: #595757;
+} 
+
+.menu .submenu {
+  display: none;
+  background: #fbf2f0;
+}
+
+.menu ul li:hover .submenu {
+  display: block;
+}
+
+@media (max-width: 660px) {
+  .topmenu {
+    float: none;
+    padding-top: 20px;
+  }
+  .menu {
+    text-align: center;
+    padding: 20px 0 0 0;
+
+  }
+
+  .topmenu a {padding: 0 10px;}
+  .topmenu a:before {transform: rotate(45deg) translateX(-6px);}
+  }
+
+@media (max-width: 600px) {
+.topmenu li {display: block;}
+}
+
+.backcall_form {
+  display: none;
+}
+
+.popup_form {
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: auto;
+  margin-left: 35%;
+  width: 400px;
+  height: 250px;
+  background: linear-gradient(-70deg, white, #fbf2f0);
+  border:#fbf2f0 solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+ }
+
+.popup_input {
+  width: 250px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.button_send {
+  border: grey 1px solid;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background: #fbf2f0;
+}
+
+.button_send:hover {
+  border: grey 1px solid;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  background: white;
+}

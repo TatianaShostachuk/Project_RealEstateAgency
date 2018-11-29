@@ -1,0 +1,65 @@
+
+.search_block {
+  background-color: rgba(0,0,0, 0.25); 
+  width: 1440;
+  height: 130px;
+  padding-bottom: 50px;
+  
+
+}
+
+.title {
+  
+  margin-left: 35%;
+  margin-top: 10%;
+  color: white;
+  padding-top: 10px;
+  opacity: 1;
+
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.d1 {
+  display: block;
+
+}
+
+.d1 input {
+  width: 50%;
+  height: 40px;
+  padding-left: 10px;
+  border: 2px solid #fbf2f0;
+ 
+  outline: none;
+  background: white;
+  color: #fbf2f0;
+}
+
+.d1 button {
+  position: absolute; 
+  top: -12px;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #fbf2f0;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.d1 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: grey;
+}
+
+.first-screen {
+  height: 700px;
+  background: url('images/city.jpg') no-repeat;
+}

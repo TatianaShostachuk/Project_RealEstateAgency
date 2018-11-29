@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Main_page</title>
+	
+	<link rel="stylesheet" type="text/css" href="style_slider.css">
+	<link rel="stylesheet" type="text/css" href="serch_style.css">
+	<link rel="stylesheet" type="text/css" href="main_page_style.css">
+	<link rel="stylesheet" type="text/css" href="menu_style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="popup_header.js"></script>
+	<script src="script_form_button.js"></script>
+	
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpwUoJtnnTj4gfatUU5L0yLHDrWWVkOBQ&callback=initMap">
+	</script>
+	<script src="script_map.js"></script>
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" />
+
+</head>
+<body>
+	
+	<div class='first-screen'>
+	
+	<div class="header">
+	    <div>
+	      <a class="navbar-logo" href=""><img src="images/house.png" class='logo'></a>
+	    </div>
+	    <nav class="menu">
+	        <ul class="topmenu">
+	          <li><a href="#" class='main_link line'>Buy</a>
+	            <ul class="submenu">
+	              <li><a href="">Apartments</a></li>
+	              <li><a href="">Houses</a></li>
+	              <li><a href="">Commercial</a></li>
+	            </ul>
+	          </li>
+
+	          <li><a href="#" class='main_link line'>Rent</a>
+	            <ul class="submenu">
+	              <li><a href="">Apartments</a></li>
+	              <li><a href="">Houses</a></li>
+	              <li><a href="">Commercial</a></li>
+	            </ul>
+	          </li>
+
+	          <li><a href="#" class='main_link line'>About us</a>
+	            <ul class="submenu">
+	              <li><a href="">About agency</a></li>
+	              <li><a href="">Our agents</a></li>
+	              <li><a href="">Reviews</a></li>
+	            </ul>
+	          </li>
+
+	          <li><a href="#" class='main_link'>Contact</a></li>
+	        </ul>
+	      </nav>
+	      <button type="submit" class='button_call' id='button1' onclick="show('backcall_id')">Quick call</button>
+	</div> 
+
+		<div class="backcall_form" id='backcall_id'>
+		    <div class='popup_form' id='popup_header'>
+		      <div><h3>We will call you as soon as possible</h3></div>
+
+		      <div >
+		        <p>Your phone number</p>
+		        <input type='tel' autocomplete="of" value='' class='popup_input' pattern="+38-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+38 (___) ___-__-__">
+		      </div>
+		      <button type="submit" class='button_send' id='popup_button' onclick="hide('backcall_id')">Send</button>
+		    </div>
+		</div>
+		<div class="search_block">
+			<div class='title'>
+				<h1>Find your new home</h1>
+			<div class="d1">
+				<form>
+					<input type="text" placeholder="Search...">
+					<button type="submit"></button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+		
+
+	<section class="second_block">
+		<div class='block_teaser'>
+			<img src='images/gabriel-beaudry-93843-unsplash.jpg' class='image_section'>
+			<h4>One bed-room apartment for rent</h4>
+		</div>
+		<div class='block_teaser'>
+			<img src='images/kari-shea-180802-unsplash.jpg' class='image_section'>
+			<h4>One bed-room apartment for rent</h4>
+		</div>
+		<div class='block_teaser'>
+			<img src='images/deborah-cortelazzi-615800-unsplash.jpg'  class='image_section'>
+			<h4>One bed-room apartment for rent</h4>
+		</div>
+		<div class='block_teaser'>
+			<img src='images/neonbrand-381374-unsplash.jpg'  class='image_section'>
+			<h4>One bed-room apartment for rent</h4>
+		</div>
+	</section>
+
+	<section class="section_slider">
+		<h2>New on site</h2>
+		<div class="all">
+		<input checked type="radio" name="respond" id="desktop">
+			<article id="slider">
+					<input checked type="radio" name="slider" id="switch1">
+					<input type="radio" name="slider" id="switch2">
+					<input type="radio" name="slider" id="switch3">
+					<input type="radio" name="slider" id="switch4">
+					<input type="radio" name="slider" id="switch5">
+				<div id="slides">
+					<div id="overflow">
+						<div class="image">
+							<article>
+								<div class="object_div">
+									<img src="images/slaid-1.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Kiev</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+								<div class="object_div">
+									<img src="images/slaid-6.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Lviv</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+							</article>
+							<article>
+								<div class="object_div">
+									<img src="images/slaid-2.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Odessa</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+								<div class="object_div">
+									<img src="images/slaid-7.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Lviv</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+							</article>
+							<article>
+								<div class="object_div">
+									<img src="images/slaid-3.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Kiev</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+								<div class="object_div">
+									<img src="images/slaid-8.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Ternopil</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+							</article>
+							<article>
+								<div class="object_div">
+									<img src="images/slaid-4.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Kiev</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+								<div class="object_div">
+									<img src="images/slaid-9.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Kharkiv</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+							</article>
+							<article>
+								<div class="object_div">
+									<img src="images/slaid-5.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Kharkiv</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+								<div class="object_div">
+									<img src="images/slaid-10.jpg">
+									<h3 class='object_title'>One bed-room apartment</h3>
+									<small>Kiev</small>
+									<p class='object_describe'>djshdfhsdhfshf</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div id="controls">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+				<div id="active">
+					<label for="switch1"></label>
+					<label for="switch2"></label>
+					<label for="switch3"></label>
+					<label for="switch4"></label>
+					<label for="switch5"></label>
+				</div>
+			</article>
+	</div>
+	</section>
+
+
+	
+
+	<section class='section_form' id='form_id'>
+		
+			<h2>We will help you find your new home!<br> Fill out the form, please</h2>
+		
+		<form>
+			<div class='fields_form'>
+				<figcaption>
+					<p>Your name</p>
+					<input type='text' autocomplete="of" value='' class='input_form'>
+				</figcaption>
+				<figcaption>
+					<p>Your pnone number</p>
+					<input type='tel' autocomplete="of" value='' class='input_form' pattern="+38-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="">
+				</figcaption>
+				<figcaption>
+					<p>Your e-mail</p>
+					<input type='email' autocomplete="of" value='' class='input_form'>
+				</figcaption>
+			</div>
+		</form>
+		<button class='button_form' type="submit" value="first-screen-form" onclick="show('thanks_id'); hide('form_id')">Send</button>
+	</section>
+	<div class="thanks_block" id='thanks_id'>
+		<h2>Thank you! We will contact you soon!</h2>
+	</div>
+	<section class='agents_section'>
+		<div>
+			<div class='agents'>
+				<img src='images/user-ashley-mason-270x270.jpg'>
+				<h3>Ann Mason</h3>
+				<p>+38 098 989 00 77</p>
+				<p>anny@realestate.com</p>
+			</div>
+			<div class='agents'>
+				<img src='images/user-ashley-mason-270x270.jpg'>
+				<h3>Ruslan Clushko</h3>
+				<p>+38 098 989 00 77</p>
+				<p>ruslan@realestate.com</p>
+			</div>
+			<div class='agents'>
+				<img src='images/user-ashley-mason-270x270.jpg'>
+				<h3>Alex Winner</h3>
+				<p>+38 098 989 00 77</p>
+				<p>alex@realestate.com</p>
+			</div>
+			<div class='agents'>
+				<img src='images/user-ashley-mason-270x270.jpg'>
+				<h3>Tony Kudenko</h3>
+				<p>+38 098 989 00 77</p>
+				<p>tony@realestate.com</p>
+			</div>
+		</div>
+		<button type='submit' class='button_agents'>View all agents</button>
+		
+	</section>
+
+	<div class="text_field">
+		<p>Ex sit principes elaboraret, mei no insolens recteque. Cu sumo aliquando persequeris nam, eu sit soleat ornatus. Nam id fugit singulis. Vel ut sale tritani veritus, invidunt scripserit ne qui, cu per ludus accusamus. Eu suas aeque maiorum pro, eu dictas timeam his, id sonet prodesset usu.</p>
+		<p>Vix possit putant partiendo ad, eum probatus deseruisse te. Sed ut nusquam accusam, nec ea nisl natum. Id quo deleniti explicari ullamcorper, in quodsi insolens intellegam pri. Ea tota harum per, ius at homero quaeque quaestio, assum moderatius duo no.</p>
+	</div>
+	<footer>
+		<div id="map" class="map"></div>
+		<div class='image_map'>
+			<img src='image_map.jpg'>
+		</div>	
+	</footer>
+
+	
+</body>
+</html>
